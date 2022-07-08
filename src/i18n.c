@@ -4,10 +4,13 @@
 
 #ifdef __APPLE__
     #define SYSTEM_NAME "macOS"
+    #define SYSTEM_NAME_WITH_SUFFIX_TURKISH "macOS'i"
 #elif __FreeBSD__
     #define SYSTEM_NAME "BSD"
+    #define SYSTEM_NAME_WITH_SUFFIX_TURKISH "BSD'i"
 #else
     #define SYSTEM_NAME "Linux"
+    #define SYSTEM_NAME_WITH_SUFFIX_TURKISH "Linux'u"
 #endif
 
 i18n_info i18n_map[] = {
@@ -19,6 +22,7 @@ i18n_info i18n_map[] = {
     {"ru_RU", "Активация "SYSTEM_NAME, "Чтобы активировать "SYSTEM_NAME",\nперейдите в раздел \"Параметры\"."},
     {"ja_JP", SYSTEM_NAME"のライセンス認証", "設定を開き、" SYSTEM_NAME "のライセンス認証を行ってください"},
     {"de_DE", SYSTEM_NAME" aktivieren", "Wechseln Sie zu den Einstellungen, um " SYSTEM_NAME " zu aktivieren."},
+    {"tr_TR", SYSTEM_NAME_WITH_SUFFIX_TURKISH" Etkinleştir", SYSTEM_NAME_WITH_SUFFIX_TURKISH " etkinleştirmek için Ayarlar'a gidin."},
     {NULL, NULL, NULL}
 };
 
